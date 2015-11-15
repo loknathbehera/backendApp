@@ -10,9 +10,11 @@ import com.bb.model.Person;
 public class PersonController {
 
 	@RequestMapping("/person")
-	public Person getPerson(@RequestParam(value="name",defaultValue="Chiku") String name){
-		Person person =new Person();
+	public Person getPerson(@RequestParam(value = "name", defaultValue = "Chiku") String name,
+			@RequestParam(value = "age", defaultValue = "24") Integer age) {
+		Person person = new Person();
 		person.setName(name);
+		person.setAge(age);
 		return person;
 	}
 }
