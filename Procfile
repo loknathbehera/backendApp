@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* StartApp
+web: java $JAVA_OPTS -jar target/backend-0.1.0.jar
